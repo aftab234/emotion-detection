@@ -1,0 +1,21 @@
+<html>
+<body>
+    <h3>Emotion Detection from Video and Text Data</h3><div>
+  <form action="/predict" method="POST">
+    <label for="sentiment">Enter the text to detect its overall sentiment</label>
+    <input type="text" id="sentiment" name="sentiment">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+	</form>
+  <form action="/record" method="POST">
+	<label for="emotion">Click the below button to record</label>
+    <input type="submit" value="Record">
+  </form>
+  <form action="/real_time" method="POST">
+	<label for="emotion">Click the below button to predict emotion in real-time</label>
+    <input type="submit" value="Predict">
+  </form>
+</div>
+</body>
+</html>

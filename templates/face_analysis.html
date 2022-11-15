@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+   <body>
+       <h1> Angry: {{ per0 }}
+			Disgust: {{ per1 }}
+			Fear: {{ per2 }}
+			Happy: {{ per3 }}
+			Neutral: {{ per4 }}
+			Sad: {{ per5 }}
+			Surprise: {{ per6 }}</h1>
+  {% set i = namespace(value=0) %}
+  {% for image in images %}
+       <img src="{{ url_for('static', filename='frames/' + image) }}" width="200"></img>
+	{% set i.value = i.value + 1 %}
+	<label>{{labels[i.value]}}</label>
+  {% endfor %}
+</section>
+   </body>
+</html>
